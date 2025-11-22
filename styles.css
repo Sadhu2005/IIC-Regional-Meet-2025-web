@@ -894,6 +894,65 @@ body {
     margin-top: 10px;
 }
 
+/* QR Logos Section */
+.qr-logos-section {
+    margin: 40px 0;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #f8f9ff 0%, white 100%);
+    border-radius: 15px;
+    border: 2px solid #e0e7ff;
+}
+
+.qr-logos-section h3 {
+    font-size: 1.5rem;
+    color: #667eea;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.qr-logos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.qr-logo-item {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e7ff;
+}
+
+.qr-logo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
+    border-color: #667eea;
+}
+
+.qr-logo-img {
+    max-width: 100%;
+    max-height: 100px;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 12px;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
+}
+
+.qr-logo-item p {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
 /* Footer */
 footer {
     background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
@@ -1073,6 +1132,20 @@ footer {
         padding: 35px 30px;
     }
 
+    .qr-logos-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        max-width: 1000px;
+    }
+
+    .qr-logo-item {
+        padding: 25px;
+    }
+
+    .qr-logo-img {
+        max-height: 120px;
+    }
+
     .footer-content {
         flex-direction: row;
         justify-content: space-around;
@@ -1184,6 +1257,18 @@ footer {
         width: 100px;
         height: 100px;
         font-size: 2.5rem;
+    }
+
+    .qr-logos-grid {
+        gap: 30px;
+    }
+
+    .qr-logo-item {
+        padding: 30px;
+    }
+
+    .qr-logo-img {
+        max-height: 140px;
     }
 }
 
