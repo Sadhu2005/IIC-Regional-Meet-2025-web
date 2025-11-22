@@ -17,3 +17,6 @@ desktop.ini
 *.tmp
 *.temp
 
+# Large PDF files (use external hosting or Git LFS)
+magazine/AIML.pdf
+
