@@ -53,26 +53,43 @@ body {
 /* Logo Header */
 .logo-header {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 30px;
-    padding: 20px;
+    padding: 15px 20px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 15px;
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.logo-header::-webkit-scrollbar {
+    height: 4px;
+}
+
+.logo-header::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.logo-header::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
 }
 
 .logo-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1;
-    min-width: 120px;
-    max-width: 200px;
+    flex: 0 0 auto;
+    min-width: 100px;
+    max-width: 180px;
+    width: auto;
 }
 
 .logo-img {
@@ -88,19 +105,23 @@ body {
 }
 
 .college-logo {
-    max-height: 80px;
+    max-height: 70px;
+    width: auto;
 }
 
 .iic-logo {
-    max-height: 70px;
+    max-height: 60px;
+    width: auto;
 }
 
 .naac-logo {
-    max-height: 70px;
+    max-height: 60px;
+    width: auto;
 }
 
 .mic-logo {
-    max-height: 70px;
+    max-height: 60px;
+    width: auto;
 }
 
 .college-badge {
@@ -1034,23 +1055,23 @@ footer {
     }
 
     .logo-header {
-        gap: 30px;
-        padding: 25px;
+        gap: 25px;
+        padding: 20px 30px;
     }
 
     .logo-item {
-        min-width: 150px;
-        max-width: 220px;
+        min-width: 130px;
+        max-width: 200px;
     }
 
     .college-logo {
-        max-height: 100px;
+        max-height: 85px;
     }
 
     .iic-logo,
     .naac-logo,
     .mic-logo {
-        max-height: 85px;
+        max-height: 75px;
     }
 
     .college-name {
@@ -1164,24 +1185,24 @@ footer {
     }
 
     .logo-header {
-        gap: 40px;
-        padding: 30px;
+        gap: 35px;
+        padding: 25px 40px;
         max-width: 1200px;
     }
 
     .logo-item {
-        min-width: 180px;
-        max-width: 250px;
+        min-width: 150px;
+        max-width: 220px;
     }
 
     .college-logo {
-        max-height: 120px;
+        max-height: 100px;
     }
 
     .iic-logo,
     .naac-logo,
     .mic-logo {
-        max-height: 100px;
+        max-height: 90px;
     }
 
     .college-name {
