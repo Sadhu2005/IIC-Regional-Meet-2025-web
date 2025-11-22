@@ -489,6 +489,55 @@ body {
     font-weight: 600;
 }
 
+/* App Download Section */
+.app-download-links {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #e0e7ff;
+}
+
+.app-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #34a853 0%, #0f9d58 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(52, 168, 83, 0.3);
+    margin-bottom: 12px;
+}
+
+.app-download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(52, 168, 83, 0.4);
+    background: linear-gradient(135deg, #0f9d58 0%, #34a853 100%);
+}
+
+.app-download-btn i {
+    font-size: 1.3rem;
+}
+
+.app-stats {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.app-stats i {
+    color: #667eea;
+    margin-right: 5px;
+}
+
 /* Metrics Section */
 .metrics {
     padding: 40px 20px;
@@ -632,6 +681,29 @@ body {
     color: white;
     font-size: 2.2rem;
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.magazine-logo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e0e7ff;
+}
+
+.dept-logo-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
 }
 
 .magazine-card h3 {
