@@ -1,0 +1,104 @@
+
+/* Poster Section */
+.poster-section {
+    padding: 30px 20px;
+    background-color: white;
+}
+
+.poster-card {
+    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+    border: 2px solid #e0e7ff;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.poster-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.poster-subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.poster-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.poster-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.poster-btn.view-btn {
+    background: #667eea;
+    color: white;
+}
+
+.poster-btn.download-btn {
+    background: white;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.poster-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Mobile Optimization Overrides */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Ensure readable base size */
+    }
+
+    .container {
+        padding: 0 15px; /* Slightly more space for content */
+    }
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .logo-header {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .logo-item {
+        width: 70px;
+        height: 70px;
+        padding: 5px;
+    }
+    
+    .college-highlights, 
+    .metrics-grid {
+        grid-template-columns: 1fr; /* Stack on mobile */
+    }
+    
+    .achievement-card {
+        padding: 20px;
+    }
+}
